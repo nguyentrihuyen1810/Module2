@@ -47,6 +47,7 @@ public class QuadraticEquation {
 
         if (quadraticEquation.getDiscriminant() > 0) {
             System.out.println("Ngiệm 1: " + quadraticEquation.getRoot1());
+            System.out.println("Nghiệm 2: " + quadraticEquation.getRoot2());
         }
     }
 }
