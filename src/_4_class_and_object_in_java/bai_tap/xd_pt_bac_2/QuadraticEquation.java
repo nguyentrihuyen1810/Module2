@@ -6,7 +6,6 @@ public class QuadraticEquation {
     double a;
     double b;
     double c;
-    double delta;
 
     public QuadraticEquation() {
 
@@ -19,8 +18,7 @@ public class QuadraticEquation {
     }
 
     public double getDiscriminant() {
-        delta = ((this.b * this.b ) - (4 * this.a * this.c));
-        return delta;
+        return ((this.b * this.b ) - (4 * this.a * this.c));
     }
 
     public double getRoot1() {
@@ -43,11 +41,18 @@ public class QuadraticEquation {
         System.out.println("Enter c: ");
         double c = scanner.nextDouble();
 
-        QuadraticEquation quadraticEquation = new QuadraticEquation(a,b,c);
+        QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
+
 
         if (quadraticEquation.getDiscriminant() > 0) {
-            System.out.println("Ngiệm 1: " + quadraticEquation.getRoot1());
+            System.out.println("Phương trình có 2 nghiệm: ");
+            System.out.println("Nghiệm 1: " + quadraticEquation.getRoot1());
             System.out.println("Nghiệm 2: " + quadraticEquation.getRoot2());
+        } else if (quadraticEquation.getDiscriminant() == 0) {
+            System.out.println("Phương trình có 1 nghiệm");
+            System.out.println("Nghiệm 1 = Nghiệm 2 : " + quadraticEquation.getRoot1());
+        } else {
+            System.out.println("Phương trình vô nghiệm");
         }
     }
 }
