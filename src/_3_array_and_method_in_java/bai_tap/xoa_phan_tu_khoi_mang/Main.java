@@ -31,7 +31,7 @@ public class Main {
 
         System.out.println("Array: ");
         for (int i:arr){
-            System.out.print(i+" ");
+            System.out.print(i + " ");
         }
 
         System.out.print("Enter the element to be deleted: ");
@@ -51,7 +51,7 @@ public class Main {
             System.out.println("Array after deleted: ");
             deleteArray(arr,a);
             for (int i:arr){
-                System.out.print(i+" ");
+                System.out.print(i + " ");
             }
 
         }
