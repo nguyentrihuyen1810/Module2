@@ -6,11 +6,11 @@ public class Point2D {
     private float x = 0.0f;
     private float y = 0.0f;
 
-    private Point2D() {
+    public Point2D() {
 
     }
 
-    private Point2D(float x, float y) {
+    public Point2D(float x, float y) {
         this.x = x;
         this.y = y;
     }
@@ -36,16 +36,16 @@ public class Point2D {
         this.y = y;
     }
 
-    public String getXY() {
-        float[] arrayXY = new float[] {this.x ,this.y};
-        return Arrays.toString(arrayXY);
+    public float[] getXY() {
+        float[] res = new float [] {x,y};
+        return res;
     }
 
-    public static void main(String[] args) {
-        Point2D point2D = new Point2D();
-        System.out.println(point2D);
-
-        point2D = new Point2D(2.0f, 5.0f);
-        System.out.println(point2D);
+    @Override
+    public String toString() {
+        return "Point2D {" +
+                "x = " + x +
+                ", y = " + y +
+                '}';
     }
 }
