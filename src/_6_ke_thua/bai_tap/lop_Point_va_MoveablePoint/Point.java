@@ -36,12 +36,4 @@ public class Point {
                 ", y = " + y +
                 '}';
     }
-
-    public static void main(String[] args) {
-        Point point = new Point();
-        System.out.println(point);
-
-        point = new Point(5.0f,6.0f);
-        System.out.println(point);
-    }
 }
