@@ -1,6 +1,4 @@
-package DSA_danh_sach.thuc_hanh.trien_khai_lop_LinkedList_don_gian;
-
-import org.w3c.dom.Node;
+package _11_DSA_danh_sach.thuc_hanh.trien_khai_lop_LinkedList_don_gian;
 
 
 public class MyLinkedList {
