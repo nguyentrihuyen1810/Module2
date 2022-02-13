@@ -9,19 +9,6 @@ public class MyLinkedList {
         head = new Node(data);
     }
 
-    private class Node {
-        private Node next;
-        private Object data;
-
-        public Node(Object data) {
-            this.data = data;
-        }
-
-        public Object getData() {
-            return this.data;
-        }
-    }
-
     private void add(int index, Object data) {
         Node temp = head;
         Node holder;
@@ -68,5 +55,18 @@ public class MyLinkedList {
         ll.add(4,9);
         ll.add(4,9);
         ll.printList();
+    }
+
+    static class Node {
+        private Node next;
+        private Object data;
+
+        public Node(Object data) {
+            this.data = data;
+        }
+
+        public Object getData() {
+            return this.data;
+        }
     }
 }
