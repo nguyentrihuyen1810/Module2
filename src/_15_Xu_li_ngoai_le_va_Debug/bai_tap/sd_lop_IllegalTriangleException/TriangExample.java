@@ -24,7 +24,7 @@ public class TriangExample {
             if (a < 0 || b < 0 || c < 0 || a + b < c || a + c < b || b + c < a) {
                 System.out.println("Các cạnh không phù hợp!");
             }
-        } catch (IllegalTriangleException e){
+        } catch (Exception e){
             System.out.println("Xảy ra ngoại tệ");
         }
     }
